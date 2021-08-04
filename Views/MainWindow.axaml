@@ -1,0 +1,14 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:rxui="http://reactiveui.net"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="480" 
+        MinHeight="480" MaxHeight="480"
+        MinWidth="800" MaxWidth="800"
+        x:Class="NSShowDialogTest.Views.MainWindow"
+        Title="ShowDialogTest">
+
+  <Button Name="btExitButton" Command="{Binding ExitButtonClicked}" Height="50" Width="100" Background="DarkSeaGreen" BorderThickness="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Exit</Button>
+  
+</Window>

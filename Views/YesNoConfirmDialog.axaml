@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="480"
+        MinHeight="280" MaxHeight="280"
+        MinWidth="400" MaxWidth="400"
+        WindowStartupLocation="CenterOwner"
+        SystemDecorations="BorderOnly"
+        x:Class="NSShowDialogTest.Views.YesNoConfirmDialog"
+        Title="YesNoConfirmDialog">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="400" />    
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="200" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <TextBlock Grid.Row="0" Name="tbName" Text="{Binding StringValue}" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>       
+      <Button Click="BtYesClick" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Background="LightGreen" Width="155" Height="50">Yes</Button>
+      <Button Click="BtNoClick" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Right" Background="LightCoral" Width="155" Height="50">No</Button>      
+    </Grid>
+  </Grid>
+</Window>
